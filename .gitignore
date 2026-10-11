@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+.kotlin/
+
+# Configuración local (ruta del SDK, claves)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Firmas
+*.jks
+*.keystore
+keystore.properties
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Material privado del proyecto: no se publica en el repositorio
+# (documentos de trabajo, la beta firmada con clave de pruebas y sus claves).
+Docs/
+FocusDivergent-beta/
+beta-test.*
+*.apk
+*.idsig

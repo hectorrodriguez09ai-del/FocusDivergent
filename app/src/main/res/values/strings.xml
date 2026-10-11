@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusDivergent</string>
+
+    <!-- Navegación -->
+    <string name="nav_today">Hoy</string>
+    <string name="nav_tasks">Tareas</string>
+    <string name="nav_vault">Bóveda</string>
+    <string name="nav_blocks">Bloqueos</string>
+    <string name="action_back">Atrás</string>
+
+    <!-- Nivel de energía (RF-2.1) -->
+    <string name="energy_low">Baja</string>
+    <string name="energy_medium">Media</string>
+    <string name="energy_high">Alta</string>
+    <string name="energy_description">Energía: %1$s</string>
+    <string name="duration_minutes_short">%1$d min</string>
+
+    <!-- Acciones comunes -->
+    <string name="action_save">Guardar</string>
+    <string name="action_delete">Borrar</string>
+    <string name="action_undo">Deshacer</string>
+    <string name="action_accept">Aceptar</string>
+    <string name="action_cancel">Cancelar</string>
+
+    <!-- Tipos de actividad (SRD §3.2) -->
+    <string name="task_type_task">Tarea</string>
+    <string name="task_type_obligation">Obligación</string>
+    <string name="task_type_routine">Rutina</string>
+    <string name="task_type_task_plural">Tareas</string>
+    <string name="task_type_obligation_plural">Obligaciones</string>
+    <string name="task_type_routine_plural">Rutinas</string>
+    <string name="task_type_task_description">Algo puntual que quieres hacer. Con o sin fecha.</string>
+    <string name="task_type_obligation_description">Algo con hora fija que no puedes perderte. Te avisará 10 minutos antes.</string>
+    <string name="task_type_routine_description">Algo que se repite. Se marca cada día que toca.</string>
+
+    <!-- Lista de actividades -->
+    <string name="task_new">Nueva</string>
+    <string name="task_done_toggle">Hecha: %1$s</string>
+    <string name="task_deleted">«%1$s» borrada</string>
+    <string name="filter_energy">Energía %1$s</string>
+    <string name="tasks_section_today">Hoy</string>
+    <string name="tasks_section_upcoming">Próximamente</string>
+    <string name="tasks_section_someday">Sin fecha</string>
+    <string name="tasks_section_done_today">Hechas hoy</string>
+    <string name="tasks_done_today_show">Ver hechas hoy (%1$d)</string>
+    <string name="tasks_done_today_hide">Ocultar hechas hoy (%1$d)</string>
+    <string name="tasks_empty_title">Empieza por una</string>
+    <string name="tasks_empty_message">Apunta lo primero que te venga a la cabeza. Con el título basta; lo demás es opcional.</string>
+    <string name="tasks_empty_action">Crear la primera</string>
+    <string name="tasks_filtered_title">Nada con este filtro</string>
+    <string name="tasks_filtered_message">Hay actividades guardadas, pero ninguna encaja con lo que has elegido.</string>
+    <string name="tasks_filtered_action">Quitar filtros</string>
+    <string name="tasks_day_empty_title">Nada previsto</string>
+    <string name="tasks_day_empty_message">Este día está libre.</string>
+
+    <!-- Tira semanal -->
+    <string name="week_today">hoy</string>
+    <string name="week_go_to_today">Ir a hoy</string>
+    <string name="week_previous">Semana anterior</string>
+    <string name="week_next">Semana siguiente</string>
+
+    <!-- Editor de actividad -->
+    <string name="task_editor_new">Nueva actividad</string>
+    <string name="task_editor_edit">Editar actividad</string>
+    <string name="task_editor_title_label">¿Qué hay que hacer?</string>
+    <string name="task_editor_title_missing">Ponle un nombre, aunque sea corto.</string>
+    <string name="task_editor_type">Tipo</string>
+    <string name="task_editor_energy">¿Cuánta energía pide?</string>
+    <string name="task_editor_when">Cuándo</string>
+    <string name="task_editor_time_optional">Hora (opcional)</string>
+    <string name="task_editor_duration">Cuánto dura (opcional)</string>
+    <string name="task_editor_repeat">Se repite</string>
+    <string name="task_editor_details_show">Añadir día, hora o duración</string>
+    <string name="task_editor_details_hide">Ocultar día, hora y duración</string>
+    <string name="task_editor_obligation_needs_time">Una Obligación necesita día y hora para poder avisarte.</string>
+    <string name="date_today">Hoy</string>
+    <string name="date_tomorrow">Mañana</string>
+    <string name="date_other">Otro día</string>
+    <string name="time_choose">Elegir hora</string>
+    <string name="time_clear">Quitar hora</string>
+    <string name="repeat_daily">Todos los días</string>
+    <string name="repeat_some_days">Algunos días</string>
+    <string name="repeat_no_days_hint">Marca los días. Sin ninguno marcado se repetirá todos los días.</string>
+
+    <!-- Límites de apps (RF-1.1) -->
+    <string name="limits_header">Apps con límite</string>
+    <string name="limit_add_app">Añadir app</string>
+    <string name="limits_empty_title">Ninguna app con límite</string>
+    <string name="limits_empty_message">Elige una app y decide cuánto tiempo al día quieres darle. Tú pones el límite; la app te ayuda a respetarlo.</string>
+    <string name="limits_empty_action">Elegir una app</string>
+    <string name="limit_summary">%1$d min · %2$s</string>
+    <string name="limit_usage_today">%1$d de %2$d min hoy</string>
+    <string name="limit_pending_change">Mañana pasará a: %1$s</string>
+    <string name="limit_pending_removal">Mañana se quitará el límite</string>
+    <string name="limit_pending_hint">Hasta medianoche sigue como está. Los cambios que dan más margen esperan a mañana; así decides en frío, no en pleno bloqueo.</string>
+    <string name="limit_pending_cancel">Cancelar el cambio</string>
+    <string name="protection_status_on">Protección activa ✓</string>
+    <string name="protection_status_off">La protección está pausada</string>
+    <string name="protection_status_off_hint">Mientras esté pausada, los límites no se aplican.</string>
+    <string name="protection_status_activate">Ir a activarla</string>
+
+    <!-- Niveles de fricción -->
+    <string name="friction_flexible">Flexible</string>
+    <string name="friction_firm">Firme</string>
+    <string name="friction_closed">Cerrada</string>
+    <string name="friction_flexible_description">Al llegar al límite puedes ganar hasta 3 ampliaciones de 15 minutos resolviendo un reto.</string>
+    <string name="friction_firm_description">Al llegar al límite, la app se cierra hasta mañana. Sin ampliaciones.</string>
+    <string name="friction_closed_description">La app está siempre en pausa. No hay tiempo diario.</string>
+
+    <!-- Selector de app -->
+    <string name="app_picker_title">Elegir app</string>
+    <string name="app_picker_search">Buscar</string>
+    <string name="app_picker_has_limit">Ya tiene límite</string>
+    <string name="app_picker_used_today">%1$d min hoy</string>
+    <string name="app_picker_empty_title">No encuentro esa app</string>
+    <string name="app_picker_empty_message">Prueba con otro nombre o quita lo que has escrito.</string>
+
+    <!-- Editor de límite -->
+    <string name="limit_editor_new">Nuevo límite</string>
+    <string name="limit_editor_edit">Cambiar límite</string>
+    <string name="limit_editor_used_today">Hoy: %1$d min</string>
+    <string name="limit_editor_time">Tiempo al día</string>
+    <string name="limit_editor_friction">¿Qué cuesta saltárselo?</string>
+    <string name="limit_editor_summary">Así quedará</string>
+    <string name="limit_remove">Quitar el límite</string>
+    <string name="limit_remove_hint">Se quita en el acto, tras resolver un reto.</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="minutes_less">Quitar %1$d minutos</string>
+    <string name="minutes_more">Añadir %1$d minutos</string>
+    <string name="limit_summary_flexible">Podrás usar %1$s %2$d min al día. Después, hasta %3$d ampliaciones de %4$d min resolviendo un reto.</string>
+    <string name="limit_summary_firm">Podrás usar %1$s %2$d min al día. Después se cierra hasta mañana.</string>
+    <string name="limit_summary_closed">%1$s estará siempre en pausa.</string>
+    <string name="limit_timing_now">Este cambio endurece el límite, así que se aplica ahora.</string>
+    <string name="limit_timing_tomorrow">Este cambio da más margen, así que se aplicará mañana a las 00:00. Hasta entonces el límite sigue como está.</string>
+    <string name="limit_timing_partial">Lo que endurece se aplica ahora; el resto, que da más margen, mañana a las 00:00.</string>
+
+    <!-- Hoy -->
+    <string name="today_energy_title">¿Con cuánta energía estás hoy?</string>
+    <string name="today_choose">Elige por mí</string>
+    <string name="today_choose_hint">Te propongo una sola cosa para empezar.</string>
+    <string name="today_now_header">Ahora</string>
+    <string name="today_leave_for_later">Dejar para luego</string>
+    <string name="today_next_obligation">Próxima obligación</string>
+    <string name="today_next_obligation_at">a las %1$s</string>
+    <string name="today_for_today">Para hoy</string>
+    <string name="today_see_all">Ver todas en Tareas</string>
+    <plurals name="today_done_count">
+        <item quantity="one">Hoy llevas %1$d hecha. Bien.</item>
+        <item quantity="many">Hoy llevas %1$d hechas. Bien.</item>
+        <item quantity="other">Hoy llevas %1$d hechas. Bien.</item>
+    </plurals>
+    <string name="today_none_title">Tu día empieza en blanco</string>
+    <string name="today_none_message">Apunta lo primero que se te ocurra y te ayudo a decidir por dónde empezar.</string>
+    <string name="today_none_action">Crear la primera</string>
+    <string name="today_empty_title">Nada pendiente para hoy</string>
+    <string name="today_empty_message">Puedes descansar, o apuntar algo nuevo cuando quieras.</string>
+
+    <!-- Elige por mí -->
+    <string name="choose_title">Elige por mí</string>
+    <string name="choose_energy_question">¿Con cuánta energía estás ahora?</string>
+    <string name="choose_time_question">¿De cuánto tiempo dispones?</string>
+    <string name="choose_time_hour">1 hora</string>
+    <string name="choose_time_unlimited">Sin prisa</string>
+    <string name="choose_energy_current">Energía de hoy: %1$s</string>
+    <string name="choose_change_energy">cambiar</string>
+    <string name="choose_change_energy_only">Cambiar la energía</string>
+    <string name="choose_result_title">Empieza por esto</string>
+    <string name="choose_start">Empezar</string>
+    <string name="choose_another">Otra</string>
+    <string name="choose_see_list">Ver mi lista</string>
+    <string name="choose_none_title">Ahora mismo nada encaja</string>
+    <string name="choose_none_message">Con esta energía y este tiempo no tengo ninguna propuesta. Puedes probar con otro tiempo o apuntar algo nuevo.</string>
+    <string name="choose_none_create">Crear una tarea rápida</string>
+    <string name="choose_none_retry">Probar con otro tiempo</string>
+
+    <!-- Lanzadera de 2 minutos (RF-3.2) -->
+    <string name="today_launch">Lanzadera de 2 minutos</string>
+    <string name="today_launch_hint">Si te cuesta arrancar: 2 minutos sin móvil y empiezas.</string>
+    <string name="launch_title">Lanzadera de 2 minutos</string>
+    <string name="launch_intro">Durante 2 minutos el móvil se bloquea para que empieces sin distracciones. Cuando acabe, decides si sigues.</string>
+    <string name="launch_task_question">¿Qué vas a empezar?</string>
+    <string name="launch_task_none">Lo que sea, solo empezar</string>
+    <string name="launch_start">Empezar 2 minutos</string>
+    <string name="launch_start_hint">No se puede cerrar antes de tiempo. Si suena una llamada, se aparta sola.</string>
+    <string name="launch_not_ready_title">Necesita la protección activa</string>
+    <string name="launch_not_ready_message">El bloqueo de la lanzadera lo hace el servicio de protección, que ahora está pausado o no tiene permiso para mostrarse sobre otras apps.</string>
+    <string name="launch_not_ready_action">Revisar la protección</string>
+    <string name="launch_overlay_title">Empieza ya</string>
+    <string name="launch_overlay_message">Nada más que esto durante dos minutos. Después decides.</string>
+    <string name="launch_remaining">Quedan %1$s</string>
+    <string name="launch_prompt_title">Ya pasaron los 2 minutos</string>
+    <string name="launch_prompt_message">¿Quieres seguir con lo que empezaste?</string>
+    <string name="launch_prompt_message_task">¿Quieres seguir con «%1$s»?</string>
+    <string name="launch_prompt_continue">Seguir</string>
+    <string name="launch_prompt_stop">Lo dejo por ahora</string>
+    <string name="launch_prompt_note">Haber empezado ya cuenta.</string>
+
+    <!-- Brain Dump: captura y bandeja de entrada (RF-5.1) -->
+    <string name="capture_action">Anotar idea</string>
+    <string name="capture_label">¿Qué se te ha ocurrido?</string>
+    <string name="capture_hint">Se guarda sola si sales. Luego decides qué hacer con ella.</string>
+    <string name="capture_saved">Idea anotada</string>
+    <string name="tile_label">Anotar idea</string>
+    <string name="notification_action_capture">Anotar idea</string>
+    <string name="inbox_header">Ideas esperando</string>
+    <plurals name="inbox_waiting">
+        <item quantity="one">%1$d idea esperando</item>
+        <item quantity="many">%1$d ideas esperando</item>
+        <item quantity="other">%1$d ideas esperando</item>
+    </plurals>
+    <string name="inbox_empty_title">Nada esperando</string>
+    <string name="inbox_empty_message">Lo que se te ocurra, anótalo aquí. Las ideas esperan sin prisa hasta que decidas qué hacer con ellas.</string>
+    <string name="idea_make_task">Hacer tarea</string>
+    <string name="idea_save_to_vault">Guardar en la Bóveda</string>
+    <string name="idea_discard">Descartar</string>
+    <string name="idea_make_task_for">Hacer tarea: %1$s</string>
+    <string name="idea_save_to_vault_for">Guardar en la Bóveda: %1$s</string>
+    <string name="idea_discard_for">Descartar: %1$s</string>
+    <string name="idea_discarded">Idea descartada</string>
+    <string name="idea_saved_to_vault">Guardada en la Bóveda</string>
+    <string name="tile_offer_title">Anota ideas desde cualquier sitio</string>
+    <string name="tile_offer_message">Añade el mosaico «Anotar idea» a los Ajustes rápidos y abre la captura con un toque, con la app que sea delante.</string>
+    <string name="tile_offer_add">Añadir a Ajustes rápidos</string>
+    <string name="tile_offer_later">Ahora no</string>
+
+    <!-- Bóveda de Hiperfocos (RF-5.2) -->
+    <string name="vault_notes_header">En la Bóveda</string>
+    <string name="vault_notes_empty">Aún no hay notas. Crea la primera con «Nueva nota», o guarda una idea de la bandeja.</string>
+    <string name="vault_folder_empty">Esta carpeta está vacía. Crea una nota o una carpeta cuando quieras.</string>
+    <string name="vault_untitled">Sin título</string>
+    <string name="vault_folder_kind">Carpeta</string>
+    <string name="vault_more">Más opciones</string>
+    <string name="vault_new_note">Nueva nota</string>
+    <string name="vault_new_folder">Nueva carpeta</string>
+    <string name="vault_folder_name">Nombre de la carpeta</string>
+    <string name="vault_folder_rename">Renombrar carpeta</string>
+    <string name="vault_folder_delete">Borrar carpeta</string>
+    <string name="vault_folder_delete_title">¿Borrar «%1$s»?</string>
+    <string name="vault_folder_delete_message">Se borrará la carpeta con todo lo que contiene: notas y carpetas. Esto no se puede deshacer.</string>
+    <string name="vault_search_label">Buscar en la Bóveda</string>
+    <string name="vault_search_clear">Borrar la búsqueda</string>
+    <string name="vault_search_empty_title">Nada encontrado</string>
+    <string name="vault_search_empty_message">Prueba con otra palabra, o quita lo que has escrito.</string>
+    <string name="vault_note_deleted">«%1$s» borrada</string>
+    <string name="vault_note_deleted_untitled">Nota borrada</string>
+
+    <!-- Editor de notas -->
+    <string name="note_editor_title">Nota</string>
+    <string name="note_editor_title_label">Título</string>
+    <string name="note_editor_body_label">Escribe aquí</string>
+    <string name="note_editor_body_hint">Admite Markdown: # título, **negrita**, - lista.</string>
+    <string name="note_editor_preview">Vista previa</string>
+    <string name="note_editor_edit">Editar</string>
+    <string name="note_editor_preview_empty">Aún no hay nada que ver.</string>
+    <string name="note_editor_location">En: %1$s</string>
+    <string name="note_editor_move">Mover</string>
+    <string name="note_editor_move_title">Mover a</string>
+    <string name="note_editor_move_root">Raíz de la Bóveda</string>
+    <string name="note_editor_tags">Etiquetas</string>
+    <string name="note_editor_tag_label">Añadir etiqueta</string>
+    <string name="note_editor_tag_remove">Quitar la etiqueta %1$s</string>
+    <string name="note_editor_tag_suggested">Ya usadas</string>
+    <string name="note_editor_saved">Guardado</string>
+    <string name="note_editor_autosave">Se guarda sola</string>
+    <string name="note_editor_delete">Borrar nota</string>
+
+    <!-- Temporizador visual (RF-4.1) -->
+    <string name="timer_title">Temporizador</string>
+    <string name="timer_kind_single">Un temporizador</string>
+    <string name="timer_kind_single_description">Una cuenta atrás del tiempo que elijas.</string>
+    <string name="timer_kind_pomodoro">Pomodoro</string>
+    <string name="timer_kind_pomodoro_description">Bloques de enfoque con descansos entre medias.</string>
+    <string name="timer_for_task">Para: «%1$s»</string>
+    <string name="timer_how_long">¿Cuánto tiempo?</string>
+    <string name="timer_focus_length">Enfoque</string>
+    <string name="timer_break_length">Descanso</string>
+    <string name="timer_cycles">Bloques de enfoque</string>
+    <string name="timer_cycles_less">Un bloque menos</string>
+    <string name="timer_cycles_more">Un bloque más</string>
+    <plurals name="timer_pomodoro_summary">
+        <item quantity="one">%1$d bloque de %2$d min. En total, %4$s.</item>
+        <item quantity="many">%1$d bloques de %2$d min con descansos de %3$d min. En total, %4$s.</item>
+        <item quantity="other">%1$d bloques de %2$d min con descansos de %3$d min. En total, %4$s.</item>
+    </plurals>
+    <string name="timer_duration_hours">%1$d h</string>
+    <string name="timer_duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="timer_start">Empezar</string>
+    <string name="timer_start_hint">Sonará un aviso al acabar cada fase.</string>
+    <string name="timer_phase_focus">Enfoque</string>
+    <string name="timer_phase_focus_of">Enfoque %1$d de %2$d</string>
+    <string name="timer_phase_break">Descanso</string>
+    <string name="timer_next_break">Después: descanso de %1$d min</string>
+    <string name="timer_next_focus">Después: enfoque de %1$d min</string>
+    <string name="timer_last_phase">Es el último tramo.</string>
+    <string name="timer_stop">Parar</string>
+    <plurals name="timer_remaining_description">
+        <item quantity="one">Queda %1$d minuto</item>
+        <item quantity="many">Quedan %1$d minutos</item>
+        <item quantity="other">Quedan %1$d minutos</item>
+    </plurals>
+    <string name="timer_finished_title">Sesión terminada</string>
+    <string name="timer_finished_message">Haber dedicado este tiempo ya cuenta.</string>
+    <string name="timer_finished_task_question">¿Terminaste «%1$s»?</string>
+    <string name="timer_finished_task_yes">Sí, está hecha</string>
+    <string name="timer_finished_task_no">Todavía no</string>
+    <string name="timer_finished_close">Cerrar</string>
+    <string name="timer_channel_running">Temporizador en curso</string>
+    <string name="timer_channel_alerts">Avisos del temporizador</string>
+    <string name="timer_notification_running">Tu temporizador está en marcha.</string>
+    <string name="timer_alert_break_title">Toca descansar</string>
+    <string name="timer_alert_break_text">Descanso de %1$d min.</string>
+    <string name="timer_alert_focus_title">Vuelve al enfoque</string>
+    <string name="timer_alert_focus_text">Bloque %1$d de %2$d, %3$d min.</string>
+    <string name="timer_alert_finished_title">Sesión terminada</string>
+    <string name="timer_alert_finished_text">Haber dedicado este tiempo ya cuenta.</string>
+    <string name="timer_alert_finished_task">¿Terminaste «%1$s»?</string>
+    <string name="today_focus_header">Enfoque</string>
+    <string name="today_timer">Temporizador</string>
+    <string name="today_timer_description">Una cuenta atrás visual, o Pomodoro.</string>
+    <string name="today_timer_running">En marcha. Toca para verlo.</string>
+    <string name="task_editor_timer">Empezar con temporizador</string>
+
+    <!-- Sonido ambiente (RF-4.2) -->
+    <string name="audio_title">Sonido ambiente</string>
+    <string name="audio_sound_white">Ruido blanco</string>
+    <string name="audio_sound_brown">Ruido marrón</string>
+    <string name="audio_sound_binaural">Binaural</string>
+    <string name="audio_sound_rain">Lluvia</string>
+    <string name="audio_sound_white_description">Constante y neutro. Ayuda a tapar el ruido del entorno.</string>
+    <string name="audio_sound_brown_description">Más grave y suave, como una cascada lejana.</string>
+    <string name="audio_sound_binaural_description">Dos tonos, uno en cada oído. Necesita auriculares.</string>
+    <string name="audio_sound_rain_description">Lluvia suave, creada en tu móvil.</string>
+    <string name="audio_binaural_note">Se nota solo con auriculares. Es un sonido más, no un tratamiento.</string>
+    <string name="audio_play">Reproducir</string>
+    <string name="audio_pause">Pausar</string>
+    <string name="audio_resume">Reanudar</string>
+    <string name="audio_stop">Parar</string>
+    <string name="audio_volume">Volumen</string>
+    <string name="audio_volume_value">Volumen: %1$d %%</string>
+    <string name="audio_volume_hint">El volumen máximo es moderado, para cuidar el oído.</string>
+    <string name="audio_sleep">Parar solo en</string>
+    <string name="audio_sleep_off">Sin límite</string>
+    <string name="audio_status_playing">Sonando: %1$s</string>
+    <string name="audio_status_paused">En pausa: %1$s</string>
+    <string name="audio_status_remaining">Se parará en %1$d min</string>
+    <string name="audio_channel_name">Sonido ambiente</string>
+    <string name="today_audio">Sonido ambiente</string>
+    <string name="today_audio_description">Ruido blanco, marrón, binaural o lluvia, sin conexión.</string>
+    <string name="today_audio_playing">Sonando. Toca para verlo.</string>
+    <string name="today_audio_paused">En pausa. Toca para verlo.</string>
+    <string name="timer_audio">Poner sonido ambiente</string>
+
+    <!-- Pestañas con contenido pendiente: dicen qué habrá, sin fingir funciones -->
+    <string name="blocks_permissions_title">Permisos y batería</string>
+    <string name="blocks_permissions_description">Lo que la protección necesita del sistema para funcionar.</string>
+
+    <!-- Bienvenida -->
+    <string name="onboarding_enter">Entrar</string>
+    <string name="onboarding_enter_later">Entrar y terminarlo después</string>
+
+    <!-- Pantalla de permisos -->
+    <string name="permissions_title">Preparemos tu espacio de enfoque</string>
+    <string name="permissions_intro">FocusDivergent necesita tres permisos del sistema para poder pausar las apps que tú elijas. Todo se queda en tu dispositivo.</string>
+
+    <string name="permission_overlay_title">Mostrar sobre otras apps</string>
+    <string name="permission_overlay_description">Permite mostrar la pantalla de pausa encima de una app cuando se agota el tiempo que tú has decidido.</string>
+
+    <string name="permission_usage_stats_title">Acceso al uso de apps</string>
+    <string name="permission_usage_stats_description">Permite saber cuánto tiempo llevas en cada app para aplicar tus límites diarios. Estos datos no salen del dispositivo.</string>
+
+    <string name="permission_accessibility_title">Servicio de accesibilidad</string>
+    <string name="permission_accessibility_description">Permite detectar qué app está en pantalla para aplicar la pausa al instante. No lee lo que escribes ni el contenido de la pantalla.</string>
+
+    <string name="permission_exact_alarm_title">Avisos puntuales (recomendado)</string>
+    <string name="permission_exact_alarm_description">Permite avisarte justo 10 minutos antes de una Obligación, incluso con el móvil en reposo. Sin este permiso el aviso puede retrasarse unos minutos. No es necesario para usar la protección.</string>
+
+    <string name="battery_title">Que Android no pare la protección (recomendado)</string>
+    <string name="battery_description">Para ahorrar batería, algunos móviles suspenden las apps que no estás usando, y eso podría detener la protección. Excluir FocusDivergent evita que pase. No es necesario para usar la app.</string>
+    <string name="battery_steps_standard">Pulsa el botón, busca FocusDivergent en la lista y elige «No optimizar» (o «Sin restricciones»).</string>
+    <string name="battery_standard_done">Ajuste estándar de Android: listo ✓</string>
+    <string name="battery_open_settings">Abrir ajustes de batería</string>
+    <string name="battery_steps_samsung">En Samsung hay un segundo ajuste propio: abre Ajustes &gt; Batería (o Cuidado del dispositivo) &gt; Límites de uso en segundo plano, entra en «Apps que nunca se suspenden» y añade FocusDivergent. Comprueba también que no esté en «Apps en suspensión» ni en «Apps en suspensión profunda». Los nombres pueden variar según la versión de One UI.</string>
+
+    <string name="permission_grant_action">Conceder</string>
+    <string name="permission_granted">Listo ✓</string>
+    <string name="permissions_all_granted">Todo listo. Ya puedes empezar.</string>
+    <string name="permissions_restricted_settings_hint">¿El interruptor de accesibilidad aparece desactivado? Si instalaste la app fuera de una tienda, abre Ajustes &gt; Apps &gt; FocusDivergent, toca el menú ⋮ y elige «Permitir ajustes restringidos».</string>
+
+    <!-- Activar / pausar la protección -->
+    <string name="protection_title">Protección de enfoque</string>
+    <string name="protection_description">Cuando una app llegue al límite que tú elegiste, aparecerá una pantalla de pausa. Puedes desactivarla cuando quieras.</string>
+    <string name="protection_activate">Activar protección</string>
+    <string name="protection_deactivate">Pausar protección</string>
+    <string name="protection_active">Protección activa ✓</string>
+
+    <!-- Pantalla de pausa (overlay) -->
+    <string name="block_title">%1$s está en pausa</string>
+    <plurals name="block_message_limit">
+        <item quantity="one">Llegaste al minuto que elegiste para hoy. Mañana empieza de nuevo.</item>
+        <item quantity="many">Llegaste a los %1$d minutos que elegiste para hoy. Mañana empieza de nuevo.</item>
+        <item quantity="other">Llegaste a los %1$d minutos que elegiste para hoy. Mañana empieza de nuevo.</item>
+    </plurals>
+    <string name="block_message_strict">Elegiste mantener esta app cerrada. Ahora es un buen momento para otra cosa.</string>
+    <string name="block_go_home">Volver al inicio</string>
+    <string name="block_earn_extension">Ganar %1$d minutos</string>
+    <plurals name="block_extensions_left">
+        <item quantity="one">Te queda %1$d ampliación hoy</item>
+        <item quantity="many">Te quedan %1$d ampliaciones hoy</item>
+        <item quantity="other">Te quedan %1$d ampliaciones hoy</item>
+    </plurals>
+    <string name="block_firm_note">Elegiste que, al llegar al límite, se cierre hasta mañana.</string>
+    <string name="block_no_more_extensions">Ya usaste tus ampliaciones de hoy. Mañana empieza de nuevo.</string>
+
+    <!-- Aviso preventivo de una Obligación (overlay) -->
+    <string name="reminder_title">%1$s en %2$d min</string>
+    <string name="reminder_message">Es hora de prepararte.</string>
+    <string name="reminder_postpone">Posponer %1$d minutos</string>
+    <string name="reminder_postpone_hint">Para posponerlo, resuelve un reto. Si no, esta pantalla se cierra sola cuando llegue la hora.</string>
+
+    <!-- Reality Check (modal translúcido) -->
+    <string name="reality_title">¿Sigues aquí de forma consciente?</string>
+    <plurals name="reality_message">
+        <item quantity="one">Llevas %1$d minuto seguido en %2$s.</item>
+        <item quantity="many">Llevas %1$d minutos seguidos en %2$s.</item>
+        <item quantity="other">Llevas %1$d minutos seguidos en %2$s.</item>
+    </plurals>
+    <string name="reality_continue">Sí, es a propósito</string>
+    <string name="reality_go_home">Salir al inicio</string>
+    <plurals name="reality_continue_hint">
+        <item quantity="one">Si sigues, te lo preguntaré de nuevo dentro de %1$d minuto.</item>
+        <item quantity="many">Si sigues, te lo preguntaré de nuevo dentro de %1$d minutos.</item>
+        <item quantity="other">Si sigues, te lo preguntaré de nuevo dentro de %1$d minutos.</item>
+    </plurals>
+
+    <!-- Reto matemático (fricción) -->
+    <string name="challenge_title">Un reto para ganar tiempo</string>
+    <string name="challenge_title_remove">Un reto para quitar el límite</string>
+    <string name="challenge_title_postpone">Un reto para posponer el aviso</string>
+    <string name="challenge_hint">Resuélvelo con calma y de cabeza.</string>
+    <string name="challenge_missed">Casi. Probemos con otra operación.</string>
+    <string name="challenge_back">Volver</string>
+    <string name="challenge_key_delete">Borrar</string>
+    <string name="challenge_key_confirm">Comprobar</string>
+
+    <!-- Notificación del servicio en primer plano -->
+    <string name="notification_channel_name">Protección de enfoque</string>
+    <string name="notification_title">Protección de enfoque activa</string>
+    <string name="notification_text">Cuidando tu tiempo en las apps que elegiste.</string>
+
+    <!-- Servicio de accesibilidad: textos que muestra Android en Ajustes -->
+    <string name="accessibility_service_label">FocusDivergent</string>
+    <string name="accessibility_service_description">FocusDivergent usa este servicio únicamente para detectar qué aplicación está en primer plano y mostrar la pantalla de pausa cuando se cumple un límite que tú has configurado. No recopila ni envía ningún dato.</string>
+
+    <!-- Mascota, nivel y racha (RF-6.1) -->
+    <string name="mascot_title">Mi mascota</string>
+    <string name="mascot_fox">Zorro</string>
+    <string name="mascot_cat">Gato</string>
+    <string name="mascot_alien">Alien con gorra</string>
+    <string-array name="mascot_fox_stages">
+        <item>Cachorro</item>
+        <item>Alegre</item>
+        <item>Durmiendo</item>
+        <item>Con pañuelo</item>
+        <item>Viajero con mochila</item>
+    </string-array>
+    <string-array name="mascot_cat_stages">
+        <item>Cachorro</item>
+        <item>Jugando con la bola</item>
+        <item>Durmiendo</item>
+        <item>Con collar</item>
+        <item>Festejando</item>
+    </string-array>
+    <string-array name="mascot_alien_stages">
+        <item>Flotando</item>
+        <item>Alegre</item>
+        <item>Meditando</item>
+        <item>De espaldas</item>
+        <item>Explorador con gorra</item>
+    </string-array>
+    <string name="mascot_description">%1$s, %2$s. Nivel %3$d.</string>
+    <string name="mascot_stage_description">%1$s, %2$s</string>
+    <string name="mascot_level">Nivel %1$d</string>
+    <string name="mascot_level_action">Ver los puntos de experiencia</string>
+    <string name="mascot_xp_detail">%1$d de %2$d XP en este nivel · %3$d XP hoy</string>
+    <string name="mascot_coins">Monedas de enfoque: %1$d</string>
+    <plurals name="streak_current">
+        <item quantity="one">Racha: %1$d día</item>
+        <item quantity="many">Racha: %1$d días</item>
+        <item quantity="other">Racha: %1$d días</item>
+    </plurals>
+    <plurals name="streak_best">
+        <item quantity="one">Mejor racha: %1$d día</item>
+        <item quantity="many">Mejor racha: %1$d días</item>
+        <item quantity="other">Mejor racha: %1$d días</item>
+    </plurals>
+    <string name="streak_start">Tu racha empieza con una rutina hecha.</string>
+    <string name="mascot_choose_header">Tu compañero</string>
+    <string name="mascot_choose_hint">Cambiar de mascota no pierde nada: el nivel es tuyo, no de ella.</string>
+    <string name="mascot_stages_header">Etapas</string>
+    <string name="mascot_stage_locked">Nivel %1$d</string>
+    <string name="mascot_stage_current">Ahora</string>
+    <string name="mascot_shop_header">Tienda de cosméticos</string>
+    <string name="mascot_shop_hint">Se compran con monedas de enfoque, que se ganan con tareas, rutinas y bloques de enfoque.</string>
+    <string name="mascot_shop_scenery">Fondos</string>
+    <string name="mascot_shop_props">Objetos</string>
+    <string name="cosmetic_scenery_calm">Tranquilo</string>
+    <string name="cosmetic_scenery_night">Noche</string>
+    <string name="cosmetic_scenery_forest">Bosque</string>
+    <string name="cosmetic_scenery_dusk">Atardecer</string>
+    <string name="cosmetic_scenery_nebula">Nebulosa</string>
+    <string name="cosmetic_prop_plant">Planta</string>
+    <string name="cosmetic_prop_books">Libros</string>
+    <string name="cosmetic_prop_lamp">Lámpara</string>
+    <string name="cosmetic_prop_star">Estrella</string>
+    <string name="cosmetic_free">Gratis</string>
+    <string name="cosmetic_worn">Puesto</string>
+    <string name="cosmetic_wear">Poner</string>
+    <string name="cosmetic_remove">Quitar</string>
+    <string name="cosmetic_buy">Comprar por %1$d</string>
+    <plurals name="cosmetic_price">
+        <item quantity="one">%1$d moneda</item>
+        <item quantity="many">%1$d monedas</item>
+        <item quantity="other">%1$d monedas</item>
+    </plurals>
+    <string name="cosmetic_bought">Ahora llevas: %1$s</string>
+    <string name="cosmetic_not_enough">Aún no te alcanzan las monedas.</string>
+
+    <!-- Cierre de Jornada (RF-6.2) -->
+    <string name="closure_title">Cierre de Jornada</string>
+    <string name="closure_finish">Listo</string>
+    <string name="closure_quiet">Hoy no quedó nada marcado, y no pasa nada. Mañana empieza de nuevo.</string>
+    <string name="closure_quiet_focus">Hoy tu tiempo de enfoque fue lo que contó.</string>
+    <plurals name="closure_done_count">
+        <item quantity="one">%1$d cosa hecha</item>
+        <item quantity="many">%1$d cosas hechas</item>
+        <item quantity="other">%1$d cosas hechas</item>
+    </plurals>
+    <string name="closure_done_more">y %1$d más</string>
+    <plurals name="closure_focus">
+        <item quantity="one">%1$d minuto de enfoque</item>
+        <item quantity="many">%1$d minutos de enfoque</item>
+        <item quantity="other">%1$d minutos de enfoque</item>
+    </plurals>
+    <string name="closure_rewards_xp">+%1$d XP</string>
+    <plurals name="closure_rewards_both">
+        <item quantity="one">+%1$d XP y +%2$d moneda de enfoque</item>
+        <item quantity="many">+%1$d XP y +%2$d monedas de enfoque</item>
+        <item quantity="other">+%1$d XP y +%2$d monedas de enfoque</item>
+    </plurals>
+    <plurals name="closure_respected">
+        <item quantity="one">Respetaste el límite de %1$d app</item>
+        <item quantity="many">Respetaste el límite de %1$d apps</item>
+        <item quantity="other">Respetaste el límite de %1$d apps</item>
+    </plurals>
+    <plurals name="closure_moved">
+        <item quantity="one">%1$d tarea pasa a mañana</item>
+        <item quantity="many">%1$d tareas pasan a mañana</item>
+        <item quantity="other">%1$d tareas pasan a mañana</item>
+    </plurals>
+    <string name="closure_moved_hint">Ya están en su sitio: no hay que hacer nada.</string>
+    <plurals name="closure_ideas">
+        <item quantity="one">Tienes %1$d idea esperando en la bandeja</item>
+        <item quantity="many">Tienes %1$d ideas esperando en la bandeja</item>
+        <item quantity="other">Tienes %1$d ideas esperando en la bandeja</item>
+    </plurals>
+    <string name="closure_ideas_hint">De noche es buen momento para ordenarlas, sin prisa.</string>
+    <string name="closure_ideas_action">Revisar la bandeja</string>
+    <plurals name="closure_leisure_note">
+        <item quantity="one">Hasta las %2$s, %1$d app de ocio queda libre.</item>
+        <item quantity="many">Hasta las %2$s, %1$d apps de ocio quedan libres.</item>
+        <item quantity="other">Hasta las %2$s, %1$d apps de ocio quedan libres.</item>
+    </plurals>
+    <string name="closure_channel">Cierre de Jornada</string>
+    <string name="closure_notification_title">Cierre de Jornada</string>
+    <string name="closure_notification_text">Tu resumen de hoy está listo. Ya puedes soltar el día.</string>
+    <plurals name="closure_notification_ideas">
+        <item quantity="one">Tu resumen de hoy está listo. Tienes %1$d idea esperando en la bandeja.</item>
+        <item quantity="many">Tu resumen de hoy está listo. Tienes %1$d ideas esperando en la bandeja.</item>
+        <item quantity="other">Tu resumen de hoy está listo. Tienes %1$d ideas esperando en la bandeja.</item>
+    </plurals>
+    <string name="closure_settings_intro">Al acabar el día, la app te enseña lo que hiciste, pasa a mañana lo que quedó sin hacer y deja libres, de noche, las apps de ocio que tú elijas.</string>
+    <string name="closure_enabled">Cerrar el día automáticamente</string>
+    <string name="closure_time_header">Hora del cierre</string>
+    <string name="closure_lift_header">Apps de ocio libres hasta</string>
+    <string name="closure_timing_hint">Dar más margen (activar el cierre, cerrar antes o alargar la noche) rige desde la medianoche. Dar menos, al momento.</string>
+    <string name="closure_pending_title">Cambio para esta medianoche</string>
+    <string name="closure_pending_on">Cierre a las %1$s, con las apps de ocio libres hasta las %2$s.</string>
+    <string name="closure_pending_off">Cierre desactivado.</string>
+    <string name="closure_pending_cancel">Cancelar el cambio</string>
+    <string name="closure_what_header">Qué pasa al cerrar</string>
+    <string name="closure_what_summary">Ves el resumen de lo que hiciste. Solo lo hecho.</string>
+    <string name="closure_what_move">Las tareas con fecha de hoy que quedaron sin hacer pasan a mañana. Las que no tienen fecha, las Obligaciones y las Rutinas no se tocan.</string>
+    <string name="closure_what_inbox">Si hay ideas en la bandeja, te invita a ordenarlas.</string>
+    <string name="closure_what_leisure">Las apps que marcaste como de ocio quedan libres hasta la mañana. El Reality Check y los avisos de Obligaciones siguen funcionando.</string>
+    <plurals name="closure_leisure_apps">
+        <item quantity="one">%1$d app marcada como de ocio. Se marcan en el límite de cada app.</item>
+        <item quantity="many">%1$d apps marcadas como de ocio. Se marcan en el límite de cada app.</item>
+        <item quantity="other">%1$d apps marcadas como de ocio. Se marcan en el límite de cada app.</item>
+    </plurals>
+    <string name="closure_open_summary_title">Resumen de hoy</string>
+    <string name="closure_open_summary_description">Mira cómo se ve el cierre del día de hoy</string>
+    <string name="blocks_closure_title">Cierre de Jornada</string>
+    <string name="blocks_closure_description">Resumen del día, traslado de pendientes y apps de ocio libres de noche</string>
+    <string name="limit_leisure_title">App de ocio</string>
+    <string name="limit_leisure_description">Con el Cierre de Jornada, esta app queda libre de noche, entre la hora de cierre y la mañana. El Reality Check y los avisos de Obligaciones siguen activos.</string>
+    <string name="limit_summary_leisure">%1$s · De ocio</string>
+
+    <!-- Micro-pasos (RF-3.1) -->
+    <string name="steps_button">Dividir en pasos</string>
+    <string name="steps_button_progress">Pasos: %1$d de %2$d hechos</string>
+    <string name="steps_editor_title">Pasos</string>
+    <string name="steps_editor_for">Para: «%1$s»</string>
+    <string name="steps_editor_hint">Pasos pequeños, de unos 5 minutos cada uno. Escribe el primero, aunque sea muy simple.</string>
+    <string name="steps_empty_title">Aún no hay pasos</string>
+    <string name="steps_empty_message">Escribe el primero o parte de una plantilla.</string>
+    <string name="steps_add_label">Nuevo paso</string>
+    <string name="steps_add_action">Añadir paso</string>
+    <string name="steps_limit_reached">Ya hay %1$d pasos, que es el máximo para una tarea.</string>
+    <string name="steps_start">Empezar con el primer paso</string>
+    <string name="steps_done_toggle">Paso hecho: %1$s</string>
+    <string name="steps_more">Más opciones del paso «%1$s»</string>
+    <string name="steps_menu_edit">Cambiar el texto</string>
+    <string name="steps_menu_up">Subir</string>
+    <string name="steps_menu_down">Bajar</string>
+    <string name="steps_menu_delete">Quitar el paso</string>
+    <string name="steps_edit_title">Cambiar el paso</string>
+    <string name="steps_templates_header">Plantillas</string>
+    <string name="steps_template_use">Usar una plantilla</string>
+    <string name="steps_template_save">Guardar como plantilla</string>
+    <string name="steps_template_picker_title">Elige una plantilla</string>
+    <string name="steps_template_builtin">De partida</string>
+    <string name="steps_template_mine">Mis plantillas</string>
+    <plurals name="steps_template_count">
+        <item quantity="one">%1$d paso</item>
+        <item quantity="other">%1$d pasos</item>
+    </plurals>
+    <string name="steps_template_delete">Borrar la plantilla «%1$s»</string>
+    <string name="steps_template_none_mine">Tus plantillas aparecerán aquí. Prepara una lista de pasos y guárdala para reutilizarla.</string>
+    <string name="steps_template_name_title">Nombre de la plantilla</string>
+    <string name="steps_template_name_label">Por ejemplo, «Hacer la compra»</string>
+    <string name="steps_template_saved">Plantilla guardada: «%1$s».</string>
+    <string name="steps_template_needs_name">Ponle un nombre a la plantilla.</string>
+    <string name="steps_template_needs_steps">Añade algún paso antes de guardarla.</string>
+    <string name="steps_template_too_many">Ya tienes el máximo de plantillas. Borra alguna para guardar otra.</string>
+    <string name="steps_template_applied">Pasos añadidos.</string>
+
+    <!-- Un paso por pantalla -->
+    <string name="step_focus_title">Paso a paso</string>
+    <string name="step_focus_counter">Paso %1$d de %2$d</string>
+    <string name="step_focus_duration_hint">Unos 5 minutos, a tu ritmo</string>
+    <string name="step_focus_done">Hecho</string>
+    <string name="step_focus_not_now">Ahora no</string>
+    <string name="step_focus_no_steps_title">Esta tarea aún no tiene pasos</string>
+    <string name="step_focus_no_steps_message">Puedes preparar unos pocos y volver aquí.</string>
+    <string name="step_focus_no_steps_action">Preparar pasos</string>
+    <string name="step_focus_all_done_title">Has pasado por todos los pasos</string>
+    <string name="step_focus_all_done_message">Cada paso cuenta. Cuando quieras, puedes dar la tarea por hecha.</string>
+    <string name="step_focus_mark_task_done">Dar la tarea por hecha</string>
+    <string name="step_focus_back">Volver</string>
+    <string name="step_focus_paused_title">Lo dejamos aquí por ahora</string>
+    <string name="step_focus_paused_message">Los pasos que quedan te esperan, justo como están.</string>
+    <string name="step_focus_review">Volver a verlos</string>
+
+    <!-- Pasos en «Hoy» y en el temporizador -->
+    <string name="today_steps_next">Siguiente paso: %1$s</string>
+    <string name="today_steps_progress">%1$d de %2$d pasos</string>
+    <string name="today_steps_split">Dividir en pasos</string>
+    <string name="timer_next_step">Ahora toca: %1$s</string>
+
+    <!-- Pasos con tu propia IA (RF-3.1, opcional) -->
+    <string name="blocks_ai_title">Pasos con tu propia IA</string>
+    <string name="blocks_ai_description">Opcional. Es lo único de la app que usa internet.</string>
+    <string name="ai_settings_title">Tu propia IA</string>
+    <string name="ai_settings_intro">Si quieres, la app puede pedirle a un servicio de IA que tú elijas una propuesta de pasos para una tarea. Es opcional y está apagado hasta que pongas tu clave.</string>
+    <string name="ai_settings_what_is_sent">Qué se envía: solo el título de la tarea, y solo cuando tú lo pides y después de que lo aceptes. Nunca notas, otras tareas, ni datos de tu móvil. Es la única función de FocusDivergent que usa internet.</string>
+    <string name="ai_settings_url_label">Dirección del servicio (https)</string>
+    <string name="ai_settings_url_invalid">La dirección debe empezar por https://</string>
+    <string name="ai_settings_model_label">Modelo</string>
+    <string name="ai_settings_key_label">Clave</string>
+    <string name="ai_settings_key_saved">Hay una clave guardada, cifrada en este móvil. Escribe otra solo si quieres cambiarla.</string>
+    <string name="ai_settings_key_hint">Se guarda cifrada en el almacén seguro del móvil y no sale de él salvo para identificarte ante tu servicio.</string>
+    <string name="ai_settings_save">Guardar</string>
+    <string name="ai_settings_saved">Guardado.</string>
+    <string name="ai_settings_incomplete">Para usarla hacen falta una dirección, un modelo y una clave.</string>
+    <string name="ai_settings_ready">Lista: verás «Sugerir pasos con tu IA» al preparar los pasos de una tarea.</string>
+    <string name="ai_settings_remove">Quitar la clave y apagar la función</string>
+    <string name="ai_settings_removed">Clave quitada. La función queda apagada.</string>
+    <string name="ai_suggest_button">Sugerir pasos con tu IA</string>
+    <string name="ai_suggest_header">Con tu IA</string>
+    <string name="ai_suggest_loading">Pensando unos pasos…</string>
+    <string name="ai_consent_title">Antes de enviar nada</string>
+    <string name="ai_consent_body">Para proponerte pasos, la app enviará a «%1$s» este dato y nada más:</string>
+    <string name="ai_consent_payload">El título de la tarea: «%1$s»</string>
+    <string name="ai_consent_notes">No se envían notas, otras tareas ni datos de tu móvil. Tu clave va en la petición solo para identificarte. Puedes retirar este permiso quitando la clave en Bloqueos.</string>
+    <string name="ai_consent_accept">Aceptar y sugerir</string>
+    <string name="ai_consent_decline">Ahora no</string>
+    <string name="ai_review_title">Propuesta para revisar</string>
+    <string name="ai_review_hint">Quita los que no te sirvan. Después podrás cambiarlos o reordenarlos.</string>
+    <string name="ai_review_add">Añadir los elegidos</string>
+    <string name="ai_review_discard">Descartar la propuesta</string>
+    <string name="ai_review_item">Incluir el paso: %1$s</string>
+    <string name="ai_failed_no_connection">No se pudo llegar a tu servicio. Puedes escribir los pasos a mano o intentarlo más tarde.</string>
+    <string name="ai_failed_rejected">Tu servicio no aceptó la petición. Revisa la clave y el modelo en Bloqueos.</string>
+    <string name="ai_failed_unreadable">No salió una propuesta que se pueda usar. Puedes intentarlo otra vez o escribir los pasos a mano.</string>
+    <string name="ai_failed_not_ready">Falta algo en la configuración de tu IA. Revísala en Bloqueos.</string>
+
+    <!-- Plantillas de partida -->
+    <string name="step_template_clean_name">Empezar a limpiar o a ordenar</string>
+    <string-array name="step_template_clean_steps">
+        <item>Pon música suave o abre una ventana</item>
+        <item>Coge una bolsa y recoge solo lo que es basura</item>
+        <item>Lleva a su sitio lo que esté fuera de lugar en una zona pequeña</item>
+        <item>Limpia una sola superficie, como la mesa o la encimera</item>
+        <item>Mira lo que has dejado listo y decide si sigues con otra zona</item>
+    </string-array>
+    <string name="step_template_work_name">Preparar un trabajo</string>
+    <string-array name="step_template_work_steps">
+        <item>Escribe en una frase qué quieres tener al final</item>
+        <item>Reúne lo que vas a necesitar: archivos, apuntes, enlaces</item>
+        <item>Haz una lista rápida de las partes del trabajo</item>
+        <item>Elige la parte más pequeña y dedícale 5 minutos</item>
+        <item>Abre el documento y escribe el título o la primera línea</item>
+    </string-array>
+    <string name="step_template_study_name">Estudiar un tema</string>
+    <string-array name="step_template_study_steps">
+        <item>Prepara el material y deja a mano algo de beber</item>
+        <item>Mira el índice o los títulos para ver de qué va el tema</item>
+        <item>Lee una sola sección con calma</item>
+        <item>Escribe con tus palabras tres ideas de lo que has leído</item>
+        <item>Apunta una duda para buscarla más adelante</item>
+    </string-array>
+    <string name="step_template_errand_name">Hacer una gestión</string>
+    <string-array name="step_template_errand_steps">
+        <item>Reúne los datos que vas a necesitar, como números o papeles</item>
+        <item>Escribe en dos líneas qué quieres conseguir</item>
+        <item>Busca el teléfono o la página donde se hace</item>
+        <item>Haz la llamada o abre el formulario</item>
+        <item>Anota lo que te han dicho y lo que queda pendiente</item>
+    </string-array>
+
+    <!-- Avisos amables de Rutinas -->
+    <string name="task_editor_routine_time_hint">Con hora, te llegará un aviso tranquilo a esa hora, una sola vez.</string>
+    <string name="routine_reminder_channel">Avisos de rutinas</string>
+    <string name="routine_reminder_text">Es la hora de tu rutina. Si hoy no puede ser, no pasa nada.</string>
+    <string name="routine_reminder_done">Hecha</string>
+    <string name="routine_reminder_later">Más tarde</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema de ventana mínimo: toda la interfaz se dibuja con Compose (FocusDivergentTheme). -->
+    <style name="Theme.FocusDivergent" parent="android:Theme.Material.NoActionBar" />
+
+    <!-- Captura rápida: translúcida, para abrirse encima de lo que haya en pantalla sin taparlo del todo. -->
+    <style name="Theme.FocusDivergent.Capture" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

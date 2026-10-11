@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dibujar la pantalla de bloqueo sobre otras apps. -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Leer el tiempo de uso de cada app. Es un permiso protegido: el usuario lo concede en Ajustes. -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Servicio persistente de bloqueo (RNF-2). Android 14 exige además el permiso del tipo concreto. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Sonido ambiente (RF-4.2): un servicio de reproducción de medios que sigue sonando con la app cerrada. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <!-- Android 13+: mostrar la notificación fija del servicio. Si se deniega, el servicio funciona igual. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        Alarma a la hora justa para el aviso de Obligaciones (RF-1.2). Desde Android 14 no viene concedido: el
+        usuario lo activa en Ajustes. Sin él se usa una alarma aproximada que puede retrasarse unos minutos.
+    -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!-- Reanudar la protección tras reiniciar el móvil (RNF-2), si el usuario la tenía activada. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--
+        Internet, solo para «Sugerir pasos con tu IA» (RF-3.1), una función opcional que el usuario activa poniendo su
+        propia clave. Sin clave la app no abre ninguna conexión. Solo https, y lo único que se envía es el título de
+        la tarea, tras aceptarlo expresamente.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Para ver el nombre de las apps con icono de lanzador (Android 11+) sin pedir QUERY_ALL_PACKAGES. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <!-- allowBackup=false: los datos del usuario no salen del dispositivo, tampoco por copias en la nube (RNF-1). -->
+    <application
+        android:name=".FocusDivergentApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FocusDivergent">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Captura rápida de ideas (RF-5.1). Solo la abre la propia app (notificación, mosaico, pestaña Bóveda), de ahí
+            que no se exporte. Tarea propia y fuera de recientes: al cerrarla se vuelve a lo que hubiera debajo.
+        -->
+        <activity
+            android:name=".presentation.capture.CaptureActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=""
+            android:theme="@style/Theme.FocusDivergent.Capture"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- Mosaico de Ajustes rápidos. BIND_QUICK_SETTINGS_TILE garantiza que solo el sistema puede enlazarse. -->
+        <service
+            android:name=".service.CaptureTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_idea"
+            android:label="@string/tile_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- BIND_ACCESSIBILITY_SERVICE garantiza que solo el sistema puede enlazarse a este servicio. -->
+        <service
+            android:name=".service.AppBlockerAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Ningún tipo de servicio predefinido describe una app de bloqueo, de ahí "specialUse". -->
+        <service
+            android:name=".service.FocusBlockerService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Monitors which app is in the foreground and shows a pause screen when a daily limit chosen by the user is reached" />
+        </service>
+
+        <!-- Solo la dispara el AlarmManager con un PendingIntent explícito de esta app. -->
+        <receiver
+            android:name=".service.ObligationAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Sonido ambiente: lo arranca la propia app (o los botones de su notificación), de ahí que no se exporte. -->
+        <service
+            android:name=".service.AmbientAudioService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <!-- Solo la dispara el AlarmManager con un PendingIntent explícito de esta app (fin de cada fase del temporizador). -->
+        <receiver
+            android:name=".service.TimerAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Reprograma la alarma del temporizador tras reiniciar o actualizar: Android borra las alarmas al apagarse. -->
+        <receiver
+            android:name=".service.TimerRestartReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Solo la dispara el AlarmManager con un PendingIntent explícito de esta app (hora del Cierre de Jornada). -->
+        <receiver
+            android:name=".service.ClosureAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Reprograma la alarma del Cierre de Jornada tras reiniciar o actualizar: Android borra las alarmas al apagarse. -->
+        <receiver
+            android:name=".service.ClosureRestartReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Avisos amables de Rutinas: solo los dispara el AlarmManager o los botones de la propia notificación. -->
+        <receiver android:name=".service.RoutineAlarmReceiver" android:exported="false" />
+        <receiver android:name=".service.RoutineSnoozeReceiver" android:exported="false" />
+        <receiver android:name=".service.RoutineActionReceiver" android:exported="false" />
+
+        <!-- Reprograma los avisos de Rutinas tras reiniciar o actualizar: Android borra las alarmas al apagarse. -->
+        <receiver
+            android:name=".service.RoutineRestartReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Eventos del sistema: no hace falta exportarlo, Android los entrega igualmente. -->
+        <receiver
+            android:name=".service.ProtectionRestartReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+FocusDivergent es una app para personas con TDAH y altas capacidades que quieren proteger su atención sin que la app las castigue. Sin cuentas, sin anuncios, sin analítica: todo ocurre en tu móvil.
+
+<b>Fricción amable para las apps que te roban el tiempo</b>
+• Límites diarios por app con tres niveles: Flexible, Firme y Cerrada.
+• Un reto matemático para ganar unos minutos, para que decidir seguir cueste un instante de reflexión.
+• Reality Check y aviso con alarma antes de una Obligación.
+• Relajar un límite se aplica a medianoche: se decide en frío, no en el impulso.
+
+<b>Empezar es lo difícil</b>
+• «Elige por mí»: una sola propuesta según tu energía del día.
+• Lanzadera de 2 minutos para arrancar.
+• «Dividir en pasos»: pasos de unos 5 minutos que ves de uno en uno, con «Hecho» y «Ahora no» del mismo peso. Plantillas de partida y propias.
+• Opcional: pide los pasos a tu propio servicio de IA con tu propia clave (solo se envía el título de la tarea, y solo si lo aceptas).
+
+<b>Tareas, rutinas y notas</b>
+• Tareas, Obligaciones y Rutinas, con avisos tranquilos que no se repiten ni escalan.
+• Brain Dump para soltar ideas al instante y Bóveda de notas en Markdown con búsqueda.
+• Temporizador visual, Pomodoro y sonido ambiente generado en el móvil.
+
+<b>Refuerzo positivo, sin culpa</b>
+• XP, monedas, racha con día de gracia y tres mascotas en pixel art. Nunca resta, nunca castiga.
+• Cierre de Jornada: un resumen de lo que has hecho y las tareas de hoy pasan a mañana sin avisos.
+
+<b>Diseño pensado para ti</b>
+Sin tonos rojos, sin lenguaje de reproche, con contraste alto, objetivos táctiles grandes, compatibilidad con TalkBack y letra grande, y respeto al movimiento reducido.
+
+<b>Privacidad</b>
+Todo se guarda solo en tu dispositivo. La app usa el servicio de accesibilidad únicamente para saber qué app está en primer plano y mostrar la pausa; no puede leer el contenido de la pantalla. Detalle completo en la política de privacidad del proyecto.
+
+Software libre bajo licencia GPL-3.0.

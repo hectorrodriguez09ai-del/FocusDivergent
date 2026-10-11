@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Solo existe en builds de debug: no se empaqueta en release. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!--
+            Permite preparar datos de prueba desde ADB. android.permission.DUMP lo tiene el shell de ADB y
+            el sistema, pero no el resto de apps, así que ninguna otra app instalada puede enviarle órdenes.
+        -->
+        <receiver
+            android:name=".debug.DebugCommandReceiver"
+            android:exported="true"
+            android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="com.focusdivergent.app.debug.SET_LIMIT" />
+                <action android:name="com.focusdivergent.app.debug.CLEAR_LIMIT" />
+                <action android:name="com.focusdivergent.app.debug.RESET_EXTENSIONS" />
+                <action android:name="com.focusdivergent.app.debug.CREATE_OBLIGATION" />
+                <action android:name="com.focusdivergent.app.debug.CLEAR_OBLIGATIONS" />
+                <action android:name="com.focusdivergent.app.debug.EXPIRE_PENDING_LIMITS" />
+                <action android:name="com.focusdivergent.app.debug.SET_REALITY_CHECK" />
+                <action android:name="com.focusdivergent.app.debug.RESET_REALITY_CHECK" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
