@@ -12,7 +12,39 @@
 
 [English](#english) · [Español](#español)
 
+## Download
+
+[<img src="https://fdroid.gitlab.io/fdroid-website/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.focusdivergent.app/)
+
 </div>
+
+The beta APK is also attached to the [GitHub Releases](https://github.com/hectorrodriguez09ai-del/FocusDivergent/releases) page.
+
+### ⚠️ *IMPORTANTE / IMPORTANT*
+
+#### Español: instalación desde GitHub en Android 13+
+
+Si instalas el archivo `.apk` descargado directamente desde GitHub en un dispositivo con **Android 13 o superior**, el sistema operativo bloqueará por seguridad el permiso del Servicio de Accesibilidad mostrando el aviso *"Ajustes restringidos"*.
+
+**Para desbloquearlo en 10 segundos:**
+1. Ve a los **Ajustes de tu teléfono > Aplicaciones > FocusDivergent**.
+2. Toca el icono de los **tres puntos verticales (`⋮`)** situado en la esquina superior derecha.
+3. Selecciona **Permitir ajustes restringidos** y confirma con tu PIN/huella dactilar.
+4. Regresa a `Ajustes > Accesibilidad > Aplicaciones instaladas > FocusDivergent` y activa el servicio normalmente.
+
+*(Nota: si instalas la aplicación desde **F-Droid**, este bloqueo no se producirá).*
+
+#### English: installing from GitHub on Android 13+
+
+If you install the `.apk` file downloaded directly from GitHub on a device running **Android 13 or higher**, the OS will block the Accessibility Service permission for security reasons, displaying the *"Restricted Settings"* prompt.
+
+**To unlock it in 10 seconds:**
+1. Go to your **Phone Settings > Apps > FocusDivergent**.
+2. Tap the **three vertical dots (`⋮`)** icon in the top right corner.
+3. Select **Allow restricted settings** and confirm with your PIN/fingerprint.
+4. Go back to `Settings > Accessibility > Installed apps > FocusDivergent` and enable the service normally.
+
+*(Note: installing the app via **F-Droid** completely bypasses this restriction).*
 
 ---
 
