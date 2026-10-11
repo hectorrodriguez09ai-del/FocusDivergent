@@ -23,8 +23,7 @@ keystore.properties
 Thumbs.db
 
 # Material privado del proyecto: no se publica en el repositorio
-# (documentos de trabajo, la beta firmada con clave de pruebas y sus claves).
-Docs/
+# (la beta firmada con clave de pruebas y sus claves, y los documentos de trabajo fuera de Docs/).
 FocusDivergent-beta/
 beta-test.*
 *.apk
